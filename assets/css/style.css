@@ -3,17 +3,24 @@
   --secondary-color: #b9d0d3;
   --tertiary-color: #39a6b2;
   --text-color: #56a5af;
+  --heading-color: #3a3f42;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html,
 body {
   background-color: #e4e3eb;
   font-family: "lato", sans-serif;
   font-size: 16px;
 }
+section {
+  padding: 8rem 10rem;
+}
+
+/*======  HEADER =================*/
 header {
   background-color: rgb(30, 36, 37);
   padding: 0.4rem 1rem;
@@ -26,10 +33,11 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-position: 80%;
+  background-position: 100%;
   z-index: 3;
   color: white;
   align-items: center;
+  width: 100vw;
 }
 
 header h1 a {
@@ -70,7 +78,7 @@ header nav ul li a {
 header nav ul li a:hover {
   color: var(--primary-color);
 }
-/* ======== hero-section============== */
+/* ======== hero-section   ============== */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.781)),
     url("../images/bg.jpg");
@@ -116,4 +124,49 @@ header nav ul li a:hover {
   color: var(--text-color);
   padding: 0.4rem 0;
   font-family: "Sirin Stencil", sanserif;
+}
+/*=========== ABOUT - ME ====================*/
+.about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.about h3 {
+  color: var(--heading-color);
+  font-size: 2rem;
+  flex: 1 25%;
+  border-right: 3px solid var(--heading-color);
+  text-align: right;
+  padding-right: 2rem;
+}
+.about div {
+  flex: 2 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 2rem;
+}
+.about div p {
+  line-height: 1.6rem;
+}
+/*========  WORK ==========*/
+.work {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.work h3 {
+  color: var(--heading-color);
+  font-size: 2rem;
+  flex: 1 25%;
+  border-right: 3px solid var(--heading-color);
+  text-align: right;
+  padding-right: 2rem;
+}
+.work div {
+  flex: 2 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 2rem;
 }
