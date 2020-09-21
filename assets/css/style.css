@@ -144,6 +144,8 @@ nav navbar-items ul li a:hover {
   border-radius: 50%;
   border: 2px solid var(--tertiary-color);
   padding: 0.85rem;
+  animation: movedown 2s;
+  /* animation: ; */
 }
 .hero-img {
   width: 10rem;
@@ -166,6 +168,21 @@ nav navbar-items ul li a:hover {
   padding: 0.4rem 0;
   font-family: "Sirin Stencil", sanserif;
 }
+
+@keyframes movedown {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  90% {
+    top: 32%;
+    opacity: 1;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
 /*========================================features ==================-=-====*/
 
 .features {
