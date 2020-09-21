@@ -5,6 +5,16 @@
   --text-color: #56a5af;
   --heading-color: #3a3f42;
   --light-heading: #c1e2e2;
+  --size: 50%;
+  --color-dark-gray: #bbbbbb;
+  --color-light-gray: #e7e7e7;
+  --color-white: #fff;
+  --color-light: #31ca97;
+  --color-dark: #2eaf84;
+  --color-greenish: linear-gradient(180deg, #00afb1 0%, #0e6882 100%);
+  --color-dark-blue: #0088a9;
+  --color-light-blue: #0bbfec;
+  --color-button: linear-gradient(rgb(6, 174, 216), rgba(0, 136, 169, 1));
 }
 * {
   margin: 0;
@@ -13,7 +23,7 @@
 }
 html,
 body {
-  /* background-color: #e4e3eb; */
+  background-color: #ffffff;
 
   font-family: "lato", sans-serif;
   font-size: 16px;
@@ -169,7 +179,7 @@ nav navbar-items ul li a:hover {
   display: flex;
   width: 100%;
   padding: 3rem;
-
+  justify-content: space-around;
   text-align: center;
 }
 .features h2 {
@@ -180,12 +190,12 @@ nav navbar-items ul li a:hover {
   align-items: center;
   width: 13%;
   height: 13rem;
-  background-color: rgb(23, 107, 128);
-  margin-left: 4rem;
+  background-color: rgb(242, 244, 247);
+  /* margin-left: 2rem; */
   color: white;
   border-radius: 4px;
   padding: 2rem 0rem;
-  box-shadow: 0px 0px 8px 3px rgba(151, 151, 151, 0.75);
+  /* box-shadow: 0px 0px 8px 3px rgba(151, 151, 151, 0.75); */
 }
 .list-items i {
   font-size: 3.5rem;
@@ -197,6 +207,91 @@ nav navbar-items ul li a:hover {
   font-size: 0.8rem;
   align-items: center;
   font-family: "lato";
+}
+/*=================   SKILLS  =================================*/
+
+.skills {
+  height: 80vh;
+  /* width: 100vw; */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.438)),
+    url("../images/k-3.jpg");
+
+  background-size: cover;
+  padding: 1rem 8rem;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.tech {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tech-item {
+  width: 20%;
+  height: 10rem;
+  border: 1px solid #fff;
+  padding: 20px;
+  color: #fff;
+
+  margin: 0 -8rem;
+}
+
+.skills h2 {
+  color: var(--color-light);
+  text-align: center;
+  margin: 4rem 0rem;
+  font-size: 1.9rem;
+}
+h2:after {
+  content: " ";
+  width: 90px;
+  height: 1.3px;
+  background-color: var(--color-dark);
+  margin: 0 auto;
+  display: block;
+  margin-top: 6px;
+}
+.skills h2:after {
+  content: " ";
+  width: 90px;
+  height: 1.3px;
+  background-color: var(--color-dark);
+  margin: 0 auto;
+  display: block;
+  margin-top: 6px;
+}
+.skills h4 {
+  color: var(--color-light);
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-family: "lato", sans-serif;
+}
+.skills h4:after {
+  content: " ";
+  width: 60px;
+  height: 1px;
+  background-color: white;
+  margin: 0 auto;
+  display: block;
+  margin-top: 6px;
+}
+.skills p {
+  font-size: 0.8rem;
+  text-align: left;
+  font-weight: bold;
+  font-family: "lato", sans-serif;
+}
+.skills p::before {
+  content: ". ";
+  margin: 0;
+  padding: 0;
 }
 /*=========== ABOUT - ME ====================*/
 .about {
