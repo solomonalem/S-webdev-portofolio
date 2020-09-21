@@ -36,7 +36,8 @@ section {
   color: rgb(15, 146, 135);
   margin: 2rem 1rem;
   font-size: 2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Varela Round", sans-serif;
+ 
   font-weight: 400;
   text-align: center;
   z-index: 3;
@@ -134,6 +135,10 @@ nav navbar-items ul li a:hover {
   height: 90vh;
   /* width: 100vw; */
   position: relative;
+  -webkit-clip-path: ellipse(110% 59% at 34% 41%);
+  clip-path: ellipse(110% 59% at 34% 41%);
+  /* -webkit-clip-path: ellipse(100% 59% at 47% 40%);
+clip-path: ellipse(100% 59% at 47% 40%); */
 }
 .hero-body {
   width: 12rem;
