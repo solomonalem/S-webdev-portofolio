@@ -36,7 +36,8 @@ section {
   color: rgb(15, 146, 135);
   margin: 2rem 1rem;
   font-size: 2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Varela Round", sans-serif;
+ 
   font-weight: 400;
   text-align: center;
   z-index: 3;
@@ -134,6 +135,10 @@ nav navbar-items ul li a:hover {
   height: 90vh;
   /* width: 100vw; */
   position: relative;
+  -webkit-clip-path: ellipse(110% 59% at 34% 41%);
+  clip-path: ellipse(110% 59% at 34% 41%);
+  /* -webkit-clip-path: ellipse(100% 59% at 47% 40%);
+clip-path: ellipse(100% 59% at 47% 40%); */
 }
 .hero-body {
   width: 12rem;
@@ -144,6 +149,8 @@ nav navbar-items ul li a:hover {
   border-radius: 50%;
   border: 2px solid var(--tertiary-color);
   padding: 0.85rem;
+  animation: movedown 2s;
+  /* animation: ; */
 }
 .hero-img {
   width: 10rem;
@@ -166,6 +173,21 @@ nav navbar-items ul li a:hover {
   padding: 0.4rem 0;
   font-family: "Sirin Stencil", sanserif;
 }
+
+@keyframes movedown {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  90% {
+    top: 32%;
+    opacity: 1;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
 /*========================================features ==================-=-====*/
 
 .features {
