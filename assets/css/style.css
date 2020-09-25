@@ -127,6 +127,8 @@ nav navbar-items ul li a:hover {
     url("../images/bg.jpg");
   background-size: cover;
   background-position: center;
+
+  /* background-image: linear-gradient(110deg, #0d8191 0%, #0e6882 100%); */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -188,50 +190,22 @@ clip-path: ellipse(100% 59% at 47% 40%); */
     top: 30%;
   }
 }
-/**=================  ABOUT  =======================================*/
-
-.about {
-  height: 100vh;
-  width: 100vw;
-
-  display: flex;
-  margin-top: 3rem;
-  background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
-  margin: 0rem 0rem;
-}
-.about-img {
-  width: 60vw;
-  height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.068)),
-    url("../img/Solomon-2.jpg");
-  background-size: cover;
-  clip-path: polygon(49% 0, 100% 0, 78% 100%, 0 100%, 0 0);
-}
-.about-bio {
-  width: 50vw;
-  text-align: center;
-  display: block;
-  padding: 2rem 3rem;
-}
-.about-bio h2 {
-  color: rgb(240, 240, 240);
-  margin: 2rem 0rem;
-  font-size: 1.9rem;
-}
-.about-bio p {
-  color: white;
-  line-height: 2;
-  padding: 2rem 1rem;
-}
 
 /*========================================features ==================-=-====*/
 
 .features {
   padding: 0rem 0rem;
-  /* background-color: rgb(13, 25, 63); */
-
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
   position: relative;
-  min-height: 100vh;
+  min-height: 10vh;
+  align-self: center;
+  text-align: center;
+  margin: 0 10vw;
+  border-radius: 1.4rem;
+  margin-bottom: 3rem;
+
+  box-shadow: 0px 7px 10px 2px rgba(145, 175, 190, 0.678);
 }
 .features-row {
   display: flex;
@@ -241,27 +215,20 @@ clip-path: ellipse(100% 59% at 47% 40%); */
   justify-content: space-around;
   text-align: center;
   align-items: center;
+  margin-top: -9rem;
 }
 .features h2 {
   margin-bottom: -2rem;
 }
 .list-items {
-  /* flex: 1 0 13%; */
-  margin-top: 2rem;
+  margin: 1rem;
   text-align: center;
   align-items: center;
-  width: 10rem;
-  height: 13rem;
+  width: 7rem;
+  height: 9rem;
   background-color: rgb(17, 105, 128);
 
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.253),
-      rgba(255, 255, 255, 0.075)
-    ),
-    url("../images/bg-sm.jpg");
-  background-size: cover;
-
-  /* margin-left: 2rem; */
+  background-color: rgb(23, 12, 66);
   color: rgb(117, 143, 158);
   border-radius: 4px;
   overflow: hidden;
@@ -269,31 +236,34 @@ clip-path: ellipse(100% 59% at 47% 40%); */
   /* border-top: 5px solid rgb(5, 93, 116) */
 }
 .list-items i {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   height: 80%;
-  color: rgb(116, 157, 180);
+  color: rgb(109, 167, 201);
   padding-top: 2rem;
 }
 .list-items span {
   border-radius: 50%;
   width: 10rem;
   /* border: 3px solid rgb(72, 87, 128); */
-  box-shadow: 0px 7px 10px 2px rgb(143, 195, 224);
+  box-shadow: 0px 7px 12px 2px rgba(107, 173, 209, 0.678);
   padding-bottom: 0.7rem;
 }
 .list-items span i {
   /* color: #77c0d6; */
   /* border-radius: 50%; */
-  width: 6rem;
+  width: 4.5rem;
   /* border: 1px solid white; */
 }
 .list-items div {
-  color: rgb(159, 199, 240);
+  color: rgb(201, 227, 253);
   font-size: 0.8rem;
   align-items: center;
+  text-align: center;
   font-family: "lato";
-  background-color: rgb(255, 255, 255);
-  padding: 1rem;
+  font-family: "Varela Round";
+  background-color: rgb(19, 7, 63);
+  padding: 2.5rem;
+  margin-top: -3rem;
 }
 /*=================   SKILLS  =================================*/
 
@@ -385,23 +355,18 @@ h2:after {
 
 .about {
   height: 100vh;
-  width: 100vw;
-
   display: flex;
   margin-top: 3rem;
   background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
-  margin: 0rem 0rem;
-}
-.about-img {
-  width: 60vw;
-  height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.068)),
-    url("../images/solomon.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.596)),
+    url("../images/bg.jpg");
   background-size: cover;
-  clip-path: polygon(49% 0, 100% 0, 78% 100%, 0 100%, 0 0);
+  background-position: center; */
+  margin: 0rem 0rem;
+  padding: 2rem 6rem;
 }
+
 .about-bio {
-  width: 50vw;
   text-align: center;
   display: block;
   padding: 2rem 3rem;
