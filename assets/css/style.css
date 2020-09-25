@@ -28,16 +28,16 @@ body {
   font-family: "lato", sans-serif;
   font-size: 16px;
 }
-section {
+/* section {
   padding: 8rem 6rem;
-}
+} */
 
 .heading-secondary {
   color: rgb(15, 146, 135);
   margin: 2rem 1rem;
   font-size: 2rem;
   font-family: "Varela Round", sans-serif;
- 
+
   font-weight: 400;
   text-align: center;
   z-index: 3;
@@ -59,6 +59,7 @@ h2,
 header {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url("../images/bg.jpg");
+
   padding-top: 1.5rem;
   background-position: 100%;
   position: relative;
@@ -86,7 +87,7 @@ nav {
 }
 
 nav h1 a {
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 1.2rem;
   margin: 0;
   color: var(--secondary-color);
@@ -96,7 +97,7 @@ nav h1 span {
   font-family: "Sirin Stencil", sanserif;
   color: var(--tertiary-color);
   border: 2px solid rgb(130, 201, 219);
-  padding: 1rem 1.4rem;
+  padding: 0.8rem 1rem;
   font-size: 1.5rem;
 }
 nav a {
@@ -135,8 +136,8 @@ nav navbar-items ul li a:hover {
   height: 90vh;
   /* width: 100vw; */
   position: relative;
-  -webkit-clip-path: ellipse(110% 59% at 34% 41%);
-  clip-path: ellipse(110% 59% at 34% 41%);
+  -webkit-clip-path: ellipse(117% 59% at 34% 41%);
+  clip-path: ellipse(117% 59% at 34% 41%);
   /* -webkit-clip-path: ellipse(100% 59% at 47% 40%);
 clip-path: ellipse(100% 59% at 47% 40%); */
 }
@@ -187,48 +188,112 @@ clip-path: ellipse(100% 59% at 47% 40%); */
     top: 30%;
   }
 }
+/**=================  ABOUT  =======================================*/
+
+.about {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  margin-top: 3rem;
+  background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
+  margin: 0rem 0rem;
+}
+.about-img {
+  width: 60vw;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.068)),
+    url("../img/Solomon-2.jpg");
+  background-size: cover;
+  clip-path: polygon(49% 0, 100% 0, 78% 100%, 0 100%, 0 0);
+}
+.about-bio {
+  width: 50vw;
+  text-align: center;
+  display: block;
+  padding: 2rem 3rem;
+}
+.about-bio h2 {
+  color: rgb(240, 240, 240);
+  margin: 2rem 0rem;
+  font-size: 1.9rem;
+}
+.about-bio p {
+  color: white;
+  line-height: 2;
+  padding: 2rem 1rem;
+}
 
 /*========================================features ==================-=-====*/
 
 .features {
   padding: 0rem 0rem;
-  background-color: rgb(255, 255, 255);
-  display: grid;
+  /* background-color: rgb(13, 25, 63); */
+
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .features-row {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap !important;
+  max-width: 100%;
   padding: 3rem;
   justify-content: space-around;
   text-align: center;
+  align-items: center;
 }
 .features h2 {
   margin-bottom: -2rem;
 }
 .list-items {
+  /* flex: 1 0 13%; */
+  margin-top: 2rem;
   text-align: center;
   align-items: center;
-  width: 13%;
+  width: 10rem;
   height: 13rem;
-  background-color: rgb(4, 14, 46);
+  background-color: rgb(17, 105, 128);
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.253),
+      rgba(255, 255, 255, 0.075)
+    ),
+    url("../images/bg-sm.jpg");
+  background-size: cover;
+
   /* margin-left: 2rem; */
-  color: white;
+  color: rgb(117, 143, 158);
   border-radius: 4px;
-  padding: 2rem 0rem;
-  /* box-shadow: 0px 0px 8px 3px rgba(151, 151, 151, 0.75); */
+  overflow: hidden;
+  box-shadow: 0px 4px 18px 3px rgba(23, 32, 71, 0.75);
+  /* border-top: 5px solid rgb(5, 93, 116) */
 }
 .list-items i {
   font-size: 3.5rem;
   height: 80%;
-  color: rgb(255, 255, 255);
+  color: rgb(116, 157, 180);
+  padding-top: 2rem;
 }
-.list-items p {
-  color: rgb(255, 255, 255);
+.list-items span {
+  border-radius: 50%;
+  width: 10rem;
+  /* border: 3px solid rgb(72, 87, 128); */
+  box-shadow: 0px 7px 10px 2px rgb(143, 195, 224);
+  padding-bottom: 0.7rem;
+}
+.list-items span i {
+  /* color: #77c0d6; */
+  /* border-radius: 50%; */
+  width: 6rem;
+  /* border: 1px solid white; */
+}
+.list-items div {
+  color: rgb(159, 199, 240);
   font-size: 0.8rem;
   align-items: center;
   font-family: "lato";
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
 }
 /*=================   SKILLS  =================================*/
 
@@ -315,29 +380,41 @@ h2:after {
   margin: 0;
   padding: 0;
 }
-/*=========== ABOUT - ME ====================*/
+
+/**=================  ABOUT  =======================================*/
+
 .about {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+
   display: flex;
+  margin-top: 3rem;
+  background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
+  margin: 0rem 0rem;
 }
-.about h3 {
-  color: var(--heading-color);
-  font-size: 2rem;
-  flex: 1 25%;
-  border-right: 3px solid var(--heading-color);
-  text-align: right;
-  padding-right: 2rem;
+.about-img {
+  width: 60vw;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.068)),
+    url("../images/solomon.jpg");
+  background-size: cover;
+  clip-path: polygon(49% 0, 100% 0, 78% 100%, 0 100%, 0 0);
 }
-.about div {
-  flex: 2 75%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 2rem;
+.about-bio {
+  width: 50vw;
+  text-align: center;
+  display: block;
+  padding: 2rem 3rem;
 }
-.about div p {
-  line-height: 1.6rem;
+.about-bio h2 {
+  color: rgb(240, 240, 240);
+  margin: 2rem 0rem;
+  font-size: 1.9rem;
+}
+.about-bio p {
+  color: white;
+  line-height: 2;
+  padding: 2rem 1rem;
 }
 /*=============  WORK =============*/
 .work {
