@@ -208,6 +208,7 @@ clip-path: ellipse(100% 59% at 47% 40%); */
   margin-bottom: 3rem;
 
   box-shadow: 0px 1px 10px 4px rgba(145, 175, 190, 0.678);
+  box-shadow: 0px 1px 12px 1px rgba(197, 197, 197, 0.678);
 }
 .features-row {
   display: flex;
@@ -237,6 +238,12 @@ clip-path: ellipse(100% 59% at 47% 40%); */
   overflow: hidden;
   /* box-shadow: 0px 4px 18px 3px rgba(23, 32, 71, 0.75); */
   /* border-top: 5px solid rgb(5, 93, 116) */
+}
+.list-items-heading {
+  background-color: rgb(36, 38, 192);
+  height: 10rem;
+  color: #0e6882;
+  width: 10rem;
 }
 .list-items i {
   font-size: 2.5rem;
@@ -294,9 +301,9 @@ clip-path: ellipse(100% 59% at 47% 40%); */
 .tech-item {
   min-width: 18%;
   height: 10rem;
-  border: 1px solid rgb(243, 245, 247);
+  border: 1px solid rgb(247, 247, 247);
   padding: 20px;
-  color: rgb(204, 226, 255);
+  color: rgb(255, 255, 255);
   border-radius: 0.2rem;
 
   /* margin: 0 8rem; */
@@ -328,14 +335,21 @@ h2:after {
 }
 .skills h4 {
   color: var(--color-light);
-  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
   text-align: center;
   line-height: 1.5;
   padding-bottom: 0.4rem;
-  font-size: 0.9rem;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.8rem;
   font-family: "lato", sans-serif;
+  /* border: 1px solid blue; */
+  border-radius: 1rem;
+  background-color: rgb(57, 151, 158);
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.03rem;
 }
-.skills h4:after {
+/* .skills h4:after {
   content: " ";
   width: 60px;
   height: 1px;
@@ -343,11 +357,11 @@ h2:after {
   margin: 0 auto;
   display: block;
   margin-top: 6px;
-}
+} */
 .skills li {
   font-size: 0.8rem;
   text-align: left;
-  font-weight: bold;
+  
   font-family: "lato", sans-serif;
   padding-top: 0.3rem;
 }
