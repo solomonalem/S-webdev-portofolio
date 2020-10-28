@@ -9,8 +9,8 @@
   --color-dark-gray: #bbbbbb;
   --color-light-gray: #e7e7e7;
   --color-white: #fff;
-  --color-light: #31ca97;
-  --color-dark: #2eaf84;
+  --color-light: #4dc2ca;
+  --color-dark: #39979d;
   --color-greenish: linear-gradient(180deg, #00afb1 0%, #0e6882 100%);
   --color-dark-blue: #0088a9;
   --color-light-blue: #0bbfec;
@@ -24,6 +24,8 @@
 html,
 body {
   background-color: #ffffff;
+  background: rgb(200,215,238);
+/* background: linear-gradient(207deg, rgba(200,215,238,1)  0%, rgb(255, 255, 255) 100%); */
 
   font-family: "lato", sans-serif;
   font-size: 16px;
@@ -49,11 +51,11 @@ h2 {
   color: rgb(5, 182, 143);
 }
 
-h2,
+/* h2,
 .heading-secondary:hover {
   color: rgb(8, 139, 111);
   text-align: center;
-}
+} */
 
 /*======  nav =================*/
 header {
@@ -218,7 +220,7 @@ clip-path: ellipse(100% 59% at 47% 40%); */
   justify-content: space-around;
   text-align: center;
   align-items: center;
-  margin-top: -9rem;
+  margin-top: -7rem;
   /* margin-top: -12rem; */
 }
 .features h2 {
@@ -314,6 +316,8 @@ clip-path: ellipse(100% 59% at 47% 40%); */
   text-align: center;
   margin: 4rem 0rem;
   font-size: 1.9rem;
+  font-family: "Varela Round";
+  font-family: "lato";
 }
 h2:after {
   content: " ";
@@ -361,7 +365,7 @@ h2:after {
 .skills li {
   font-size: 0.8rem;
   text-align: left;
-  
+
   font-family: "lato", sans-serif;
   padding-top: 0.3rem;
 }
@@ -401,6 +405,122 @@ h2:after {
   line-height: 2;
   padding: 2rem 1rem;
 }
+/* =============================== PROJECTS =============== */
+
+.projects {
+  width: 100%;
+
+  /* height: 100vh; */
+  padding: 3rem;
+  /* margin:3rem; */
+  background-color: #c8d7ee;
+
+  /* background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%); */
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  height: 49vh;
+  width: 100%;
+  background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
+  background-color: #fff;
+
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.project-img {
+  /* height: 40vh; */
+  width: 50%;
+  background: linear-gradient(
+      rgba(189, 227, 252, 0.136),
+      rgba(180, 201, 247, 0.384)
+    ),
+    url("../images/work-5.png");
+  background-size: cover;
+  /* border: 1px solid black; */
+  border-radius: 0.3rem;
+  /* box-shadow: 0 0 10px 1px rgb(36, 112, 112); */
+  /* margin: 0.6rem; */
+}
+.project-info {
+  border-radius: 0.3rem;
+  background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%);
+  /* border: 1px solid black; */
+  /* margin: 0.6rem; */
+  padding: 1rem;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(232, 242, 250);
+}
+.project-item1 {
+  height: 10vh;
+  width: 100%;
+}
+.project-info h4 {
+  color: rgb(137, 247, 255);
+  margin-bottom: 1rem;
+  /* border-bottom: 2px solid white; */
+  padding: 0 3rem;
+}
+.project-info h4:after {
+  content: " ";
+  width: 60px;
+  height: 1.3px;
+  background-color: rgb(109, 216, 221);
+  margin: 0 auto;
+  display: block;
+  margin-top: 9px;
+}
+.project-info p {
+  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "lato";
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin: 1.4rem;
+}
+.project-info h6 {
+  /* color: white; */
+  display: flex;
+}
+.project-info div {
+  margin: 1rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.project-info a {
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.2rem 1rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  width: 6rem;
+  margin: 0 0.5rem;
+  /* font-weight: bold; */
+  /* position: absolute; */
+}
+.project-info a:hover {
+  
+  font-weight: bold;
+  border: 2px solid rgb(255, 255, 255);
+}
+.project-info a i {
+  margin-right: 0.4rem;
+  font-size: 1rem;
+}
+.project-info span {
+  margin: 0 0.3rem;
+  /* border: 1px solid white; */
+  padding: 0.3rem 1rem;
+  width: 7rem;
+  background-color: #00afb1;
+  font-size: 0.7rem;
+}
+
 /*=============  WORK =============*/
 .work {
   height: 100%;
