@@ -24,8 +24,8 @@
 html,
 body {
   background-color: #ffffff;
-  background: rgb(200,215,238);
-/* background: linear-gradient(207deg, rgba(200,215,238,1)  0%, rgb(255, 255, 255) 100%); */
+  background: rgb(200, 215, 238);
+  /* background: linear-gradient(207deg, rgba(200,215,238,1)  0%, rgb(255, 255, 255) 100%); */
 
   font-family: "lato", sans-serif;
   font-size: 16px;
@@ -35,10 +35,11 @@ body {
 } */
 
 .heading-secondary {
-  color: rgb(15, 146, 135);
-  margin: 2rem 1rem;
+  color: rgb(23, 170, 175);
+  margin: 0rem 1rem;
   font-size: 2rem;
   font-family: "Varela Round", sans-serif;
+  font-family: "lato";
 
   font-weight: 400;
   text-align: center;
@@ -46,9 +47,6 @@ body {
 }
 .heading-secondary span {
   color: white;
-}
-h2 {
-  color: rgb(5, 182, 143);
 }
 
 /* h2,
@@ -350,6 +348,12 @@ h2:after {
   /* border: 1px solid blue; */
   border-radius: 1rem;
   background-color: rgb(57, 151, 158);
+  /* background-image: linear-gradient(
+    180deg,
+    #0e6882 0%,
+    #00afb1 100%,
+    #0e6882 0%
+  ); */
   margin-bottom: 0.9rem;
   letter-spacing: 0.03rem;
 }
@@ -412,8 +416,13 @@ h2:after {
 
   /* height: 100vh; */
   padding: 3rem;
+
   /* margin:3rem; */
+
   background-color: #c8d7ee;
+  background-color: rgb(4, 14, 46);
+  background-color: #041124;
+  /* background-color: rgb(4, 14, 46); */
 
   /* background-image: linear-gradient(110deg, #00afb1 0%, #0e6882 100%); */
 }
@@ -427,10 +436,14 @@ h2:after {
 
   border-radius: 0.3rem;
   padding: 1rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
+.project h2 {
+  text-align: center !important;
+}
+
 .project-img {
-  /* height: 40vh; */
+  /* height: 49vh; */
   width: 50%;
   background: linear-gradient(
       rgba(189, 227, 252, 0.136),
@@ -438,10 +451,7 @@ h2:after {
     ),
     url("../images/work-5.png");
   background-size: cover;
-  /* border: 1px solid black; */
   border-radius: 0.3rem;
-  /* box-shadow: 0 0 10px 1px rgb(36, 112, 112); */
-  /* margin: 0.6rem; */
 }
 .project-info {
   border-radius: 0.3rem;
@@ -454,10 +464,10 @@ h2:after {
   text-align: center;
   background-color: rgb(232, 242, 250);
 }
-.project-item1 {
-  height: 10vh;
+/* .project-item1 {
+   height: 10vh; 
   width: 100%;
-}
+}  */
 .project-info h4 {
   color: rgb(137, 247, 255);
   margin-bottom: 1rem;
@@ -504,7 +514,6 @@ h2:after {
   /* position: absolute; */
 }
 .project-info a:hover {
-  
   font-weight: bold;
   border: 2px solid rgb(255, 255, 255);
 }
