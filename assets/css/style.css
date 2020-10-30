@@ -138,11 +138,9 @@ nav navbar-items ul li a:hover {
   height: 100vh;
   /* width: 100vw; */
   position: relative;
-  -webkit-clip-path: ellipse(117% 59% at 34% 41%);
-  clip-path: ellipse(117% 59% at 34% 41%);
-  clip-path: ellipse(100% 51% at 50% 44%);
-  /* -webkit-clip-path: ellipse(100% 59% at 47% 40%);
-clip-path: ellipse(100% 59% at 47% 40%); */
+  /* -webkit-clip-path: ellipse(117% 59% at 34% 41%); */
+  /* clip-path: ellipse(117% 59% at 34% 41%); */
+  /* clip-path: ellipse(100% 51% at 50% 44%); */
 }
 .hero-body {
   width: 12rem;
@@ -196,7 +194,7 @@ clip-path: ellipse(100% 59% at 47% 40%); */
 
 .features {
   padding: 0rem 0rem;
-  background-color: rgb(244, 246, 255);
+  /* background-color: rgb(244, 246, 255); */
   /* background-color: rgb(11, 29, 109); */
   width: 80vw;
   position: relative;
@@ -207,8 +205,8 @@ clip-path: ellipse(100% 59% at 47% 40%); */
   border-radius: 1.4rem;
   margin-bottom: 3rem;
 
-  box-shadow: 0px 1px 10px 4px rgba(145, 175, 190, 0.678);
-  box-shadow: 0px 1px 12px 1px rgba(197, 197, 197, 0.678);
+  /* box-shadow: 0px 1px 10px 4px rgba(145, 175, 190, 0.678); */
+  /* box-shadow: 0px 1px 12px 1px rgba(197, 197, 197, 0.678); */
 }
 .features-row {
   display: flex;
@@ -415,9 +413,7 @@ h2:after {
   width: 100%;
 
   /* height: 100vh; */
-  padding: 3rem;
-
-  /* margin:3rem; */
+  padding: 7rem 3rem;
 
   background-color: #c8d7ee;
   background-color: rgb(4, 14, 46);
@@ -438,8 +434,10 @@ h2:after {
   padding: 1rem;
   margin: 2rem 0;
 }
-.project h2 {
+.projects h2 {
   text-align: center !important;
+  margin-bottom: 4rem;
+  margin-top:-2rem;
 }
 
 .project-img {
