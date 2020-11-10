@@ -24,9 +24,6 @@
 html,
 body {
   background-color: #ffffff;
-  background: rgb(200, 215, 238);
-  /* background: linear-gradient(207deg, rgba(200,215,238,1)  0%, rgb(255, 255, 255) 100%); */
-
   font-family: "lato", sans-serif;
   font-size: 16px;
 }
@@ -437,10 +434,32 @@ h2:after {
 .projects h2 {
   text-align: center !important;
   margin-bottom: 4rem;
-  margin-top:-2rem;
+  margin-top: -2rem;
 }
 
-.project-img {
+.project-one .project-img {
+  /* height: 49vh; */
+  width: 50%;
+  background: linear-gradient(
+      rgba(189, 227, 252, 0.136),
+      rgba(180, 201, 247, 0.384)
+    ),
+    url("../images/work-6.png");
+  background-size: cover;
+  border-radius: 0.3rem;
+}
+.project-two .project-img {
+  /* height: 49vh; */
+  width: 50%;
+  background: linear-gradient(
+      rgba(189, 227, 252, 0.136),
+      rgba(180, 201, 247, 0.384)
+    ),
+    url("../images/work-1.png");
+  background-size: cover;
+  border-radius: 0.3rem;
+}
+.project-three .project-img {
   /* height: 49vh; */
   width: 50%;
   background: linear-gradient(
@@ -448,6 +467,17 @@ h2:after {
       rgba(180, 201, 247, 0.384)
     ),
     url("../images/work-5.png");
+  background-size: cover;
+  border-radius: 0.3rem;
+}
+.project-four .project-img {
+  /* height: 49vh; */
+  width: 50%;
+  background: linear-gradient(
+      rgba(189, 227, 252, 0.136),
+      rgba(180, 201, 247, 0.384)
+    ),
+    url("../images/work-7.png");
   background-size: cover;
   border-radius: 0.3rem;
 }
@@ -561,28 +591,28 @@ h2:after {
 .contact {
   height: 100%;
   width: 100%;
-  display: flex;
+  background-color: #fff;
 }
 .contact h3 {
   color: var(--heading-color);
   font-size: 2rem;
   flex: 1 25%;
-  border-right: 3px solid var(--heading-color);
-  text-align: right;
+  text-align: center;
   padding-right: 2rem;
+  margin: 3rem;
 }
 .contact div {
-  flex: 2 75%;
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
   padding-left: 2rem;
   width: 100%;
+  margin: 4rem auto;
 }
 .contact div ul {
   display: flex;
-
+  text-align: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin: 4rem auto;
 }
 .contact ul li {
   display: flex;
