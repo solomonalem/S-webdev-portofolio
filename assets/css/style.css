@@ -764,9 +764,6 @@ h2:after {
     height: 100vh;
     padding: 1rem 5rem;
   }
-  .tech {
-    width: 100%;
-  }
   .tech-item {
     min-width: 34%;
     height: 10rem;
@@ -850,9 +847,7 @@ h2:after {
     height: 180vh;
     padding: 1rem 5rem;
   }
-  .tech {
-    width: 100%;
-  }
+  
   .tech-item {
     min-width: 58%;
   }
@@ -921,7 +916,7 @@ h2:after {
 }
 @media screen and (max-width: 400px) {
   
-    .about-bio  {
+.about-bio  {
       padding: 0rem .5rem ;
     }
   .skills {
