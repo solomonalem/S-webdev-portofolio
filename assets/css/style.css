@@ -291,6 +291,7 @@ nav navbar-items ul li a:hover {
   width: 100%;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -651,6 +652,18 @@ h2:after {
   }
 }
 @media screen and (max-width: 1080px) {
+  .skills {
+    height: 100vh;
+    padding: 1rem 8rem;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-item {
+    min-width: 22%;
+    height: 10rem;
+  }
+
   .projects {
     padding: 3rem 1.5rem;
   }
@@ -699,6 +712,19 @@ h2:after {
     flex: 2 80%;
   }
 
+  .skills {
+    height: 100vh;
+    padding: 1rem 10rem;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-item {
+    min-width: 34%;
+    height: 10rem;
+    margin: 2rem 1rem;
+  }
+
   .projects {
     padding: 3rem;
   }
@@ -733,6 +759,21 @@ h2:after {
   }
 }
 /*=== media-query screen size 768px ---*/
+@media screen and (max-width: 828px) {
+  .skills {
+    height: 100vh;
+    padding: 1rem 5rem;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-item {
+    min-width: 34%;
+    height: 10rem;
+    margin: 2rem 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   section {
     padding: 8rem 3rem;
@@ -754,6 +795,11 @@ h2:after {
   section {
     padding: 8rem 3rem;
   }
+
+  .tech-item {
+    min-width: 40%;
+  }
+
   .projects {
     padding: 3rem 1rem;
   }
@@ -789,6 +835,18 @@ h2:after {
     text-align: center;
     margin: 0.9rem;
   }
+
+  .skills {
+    height: 180vh;
+    padding: 1rem 5rem;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-item {
+    min-width: 58%;
+  }
+
   .projects {
     padding: 3rem 1rem;
   }
@@ -826,6 +884,17 @@ h2:after {
   }
 }
 @media screen and (max-width: 495px) {
+  .skills {
+    height: 200vh;
+    padding: 1rem 3rem;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-item {
+    min-width: 58%;
+  }
+
   .projects {
     padding: 3rem 1rem;
   }
@@ -848,6 +917,17 @@ h2:after {
   }
 }
 @media screen and (max-width: 400px) {
+  .skills {
+    height: 200vh;
+    padding: 1rem 3rem;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-item {
+    min-width: 88%;
+  }
+
   .projects {
     padding: 3rem 0rem;
   }
@@ -870,12 +950,23 @@ h2:after {
     font-size: 0.5rem;
   }
   .project-info p {
-   
     font-size: 0.9rem;
     /* margin: 0.3rem; */
-}
+  }
 }
 @media screen and (max-width: 315px) {
+
+  .skills {
+    height: 200vh;
+    padding: 1rem 1rem;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-item {
+    min-width: 88%;
+    margin: 1rem;
+  }
   .projects {
     padding: 3rem 0rem;
   }
@@ -898,8 +989,7 @@ h2:after {
     font-size: 0.5rem;
   }
   .project-info p {
-   
     font-size: 0.9rem;
     margin: 0.3rem;
-}
+  }
 }
