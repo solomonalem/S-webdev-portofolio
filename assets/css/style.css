@@ -63,8 +63,6 @@ header {
   position: relative;
 }
 nav {
-  background-color: rgb(5, 56, 66);
-  background-color: rgb(6, 37, 95);
   background-color: rgb(4, 14, 46);
   padding: 0.5rem 1rem;
   display: flex;
@@ -125,8 +123,6 @@ nav navbar-items ul li a:hover {
     url("../images/bg.jpg");
   background-size: cover;
   background-position: center;
-
-  /* background-image: linear-gradient(110deg, #0d8191 0%, #0e6882 100%); */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -134,11 +130,7 @@ nav navbar-items ul li a:hover {
   background-attachment: fixed;
   background-position: 80%;
   height: 100vh;
-  /* width: 100vw; */
   position: relative;
-  /* -webkit-clip-path: ellipse(117% 59% at 34% 41%); */
-  /* clip-path: ellipse(117% 59% at 34% 41%); */
-  /* clip-path: ellipse(100% 51% at 50% 44%); */
 }
 .hero-body {
   width: 12rem;
@@ -150,7 +142,6 @@ nav navbar-items ul li a:hover {
   border: 2px solid var(--tertiary-color);
   padding: 0.85rem;
   animation: movedown 2s;
-  /* animation: ; */
 }
 .hero-img {
   width: 10rem;
@@ -192,8 +183,6 @@ nav navbar-items ul li a:hover {
 
 .features {
   padding: 0rem 0rem;
-  /* background-color: rgb(244, 246, 255); */
-  /* background-color: rgb(11, 29, 109); */
   width: 80vw;
   position: relative;
   min-height: 10vh;
@@ -202,9 +191,6 @@ nav navbar-items ul li a:hover {
   margin: 0 10vw;
   border-radius: 1.4rem;
   margin-bottom: 3rem;
-
-  /* box-shadow: 0px 1px 10px 4px rgba(145, 175, 190, 0.678); */
-  /* box-shadow: 0px 1px 12px 1px rgba(197, 197, 197, 0.678); */
 }
 .features-row {
   display: flex;
@@ -215,7 +201,6 @@ nav navbar-items ul li a:hover {
   text-align: center;
   align-items: center;
   margin-top: -7rem;
-  /* margin-top: -12rem; */
 }
 .features h2 {
   margin-bottom: -2rem;
@@ -226,14 +211,9 @@ nav navbar-items ul li a:hover {
   align-items: center;
   width: 7rem;
   height: 9rem;
-  /* background-color: rgb(17, 105, 128); */
-
-  /* background-color: rgb(23, 12, 66); */
   color: rgb(117, 143, 158);
   border-radius: 4px;
   overflow: hidden;
-  /* box-shadow: 0px 4px 18px 3px rgba(23, 32, 71, 0.75); */
-  /* border-top: 5px solid rgb(5, 93, 116) */
 }
 .list-items-heading {
   background-color: rgb(36, 38, 192);
@@ -250,15 +230,11 @@ nav navbar-items ul li a:hover {
 .list-items span {
   border-radius: 50%;
   width: 10rem;
-  /* border: 3px solid rgb(72, 87, 128); */
   box-shadow: 0px 7px 12px 2px rgba(107, 173, 209, 0.678);
   padding-bottom: 0.7rem;
 }
 .list-items span i {
-  /* color: #77c0d6; */
-  /* border-radius: 50%; */
   width: 4.5rem;
-  /* border: 1px solid white; */
 }
 .list-items div {
   color: rgb(11, 87, 138);
@@ -296,7 +272,7 @@ nav navbar-items ul li a:hover {
   align-items: center;
 }
 .tech-item {
-  min-width: 18%;
+  min-width: 20%;
   height: 10rem;
   border: 1px solid rgb(247, 247, 247);
   padding: 20px;
@@ -555,9 +531,9 @@ h2:after {
 }
 /*------- CONTACT ME =================*/
 .contact {
-  height: 100%;
+  height: 40vh;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(4, 14, 46);
 }
 .contact h3 {
   color: var(--heading-color);
@@ -589,7 +565,7 @@ h2:after {
 }
 .contact div ul li a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
 }
 .contact div ul li a i {
   margin-right: 0.5rem;
@@ -705,8 +681,6 @@ h2:after {
   nav navbar-items ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
- 
-  
 
   .skills {
     height: 100vh;
@@ -756,8 +730,7 @@ h2:after {
 }
 /*=== media-query screen size 768px ---*/
 @media screen and (max-width: 828px) {
-
-  .about  {
+  .about {
     padding: 2rem 3rem;
   }
   .skills {
@@ -772,9 +745,9 @@ h2:after {
 }
 
 @media screen and (max-width: 768px) {
-  .about  {
+  .about {
     height: 120vh;
-    padding: 2rem ;
+    padding: 2rem;
   }
   section {
     padding: 8rem 3rem;
@@ -793,7 +766,7 @@ h2:after {
 }
 /*=== media-query screen size 668px ---*/
 @media screen and (max-width: 668px) {
-  .about  {
+  .about {
     padding: 2rem 1rem;
   }
   section {
@@ -826,7 +799,7 @@ h2:after {
 }
 /*=== media-query screen size 575px ---*/
 @media screen and (max-width: 575px) {
-  .about  {
+  .about {
     padding: 2rem 0rem;
   }
   section {
@@ -847,7 +820,7 @@ h2:after {
     height: 180vh;
     padding: 1rem 5rem;
   }
-  
+
   .tech-item {
     min-width: 58%;
   }
@@ -872,15 +845,13 @@ h2:after {
     width: 5.3rem;
     font-size: 0.63rem;
   }
-  
-  
 }
 @media screen and (max-width: 495px) {
-  .about  {
-  height: 140vh;
+  .about {
+    height: 140vh;
   }
-  .about-bio  {
-    padding: 2rem ;
+  .about-bio {
+    padding: 2rem;
   }
   .skills {
     height: 200vh;
@@ -915,10 +886,9 @@ h2:after {
   }
 }
 @media screen and (max-width: 400px) {
-  
-.about-bio  {
-      padding: 0rem .5rem ;
-    }
+  .about-bio {
+    padding: 0rem 0.5rem;
+  }
   .skills {
     height: 200vh;
     padding: 1rem 3rem;
@@ -957,9 +927,9 @@ h2:after {
   }
 }
 @media screen and (max-width: 315px) {
-  .about  {
+  .about {
     height: 160vh;
-    }
+  }
 
   .skills {
     height: 200vh;
